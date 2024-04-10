@@ -1,0 +1,34 @@
+[package]
+name = "rust_develop_template"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[lib]
+name = "rust_develop_templatelib"
+# "cdylib", "staticlib", "dylib", "rlib"
+crate-type = ["cdylib", "staticlib", "rlib"]
+path = "src/lib/lib.rs"
+
+[[bin]]
+name = "rust_develop_template1"
+path = "src/rust_develop_template1/main.rs"
+
+[[bin]]
+name = "rust_develop_template2"
+path = "src/rust_develop_template2/main.rs"
+
+# [[test]]
+# name = "rust_develop_template_test"
+# path = "tests"
+
+# [[bench]]
+# name = "rust_develop_template_bench"
+
+# [[example]]
+# name = "rust_develop_template_example"
+
+
+[dependencies]
