@@ -22,7 +22,7 @@ build_lib_release:
 
 install:
 	cargo install rm-rs
-	cargo install cargo-tarpaulin
+	# cargo install cargo-tarpaulin
 
 update:
 	cargo update

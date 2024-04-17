@@ -32,3 +32,4 @@ path = "src/rust_develop_template2/main.rs"
 
 
 [dependencies]
+dotenv = "0.15.0"
