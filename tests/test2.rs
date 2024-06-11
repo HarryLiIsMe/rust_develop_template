@@ -4,9 +4,16 @@ mod tests {
     use dotenv::dotenv;
 
     #[test]
-    fn test_case2() {
+    fn test_case3() {
         dotenv().ok();
 
-        assert!(false, "test case2 failed");
+        assert!(true, "test case3 failed");
+    }
+
+    #[test]
+    fn test_case4() {
+        dotenv().ok();
+
+        assert!(false, "test case3 failed");
     }
 }
