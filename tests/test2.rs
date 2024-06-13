@@ -14,6 +14,6 @@ mod tests {
     fn test_case4() {
         dotenv().ok();
 
-        assert!(false, "test case3 failed");
+        assert!(false, "test case4 failed");
     }
 }
