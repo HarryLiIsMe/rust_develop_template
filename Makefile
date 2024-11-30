@@ -14,10 +14,10 @@ build_bins:
 build_bins_release:
 	cargo build --bins --target-dir output/bins --release
 
-build_lib:
+build_libs:
 	cargo build --lib --target-dir output/lib
 
-build_lib_release:
+build_libs_release:
 	cargo build --lib --target-dir output/lib --release
 
 install:
@@ -34,6 +34,10 @@ clean:
 fmt:
 	cargo fmt
 
+run:
+	cargo run --bin rust_develop_template1
+	cargo run --bin rust_develop_template2
+
 lint:
 	cargo clippy
 	cargo clippy --no-default-features
@@ -49,6 +53,3 @@ bench:
 
 coverage:
 	cargo tarpaulin --timeout=900 --branch --release
-
-
-

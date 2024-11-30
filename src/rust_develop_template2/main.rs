@@ -1,7 +1,10 @@
 use dotenv::dotenv;
+use std::env;
 
 fn main() {
     dotenv().ok();
 
-    println!("hello world2");
+    let project_name = env::var("PROJECT_NAME").unwrap();
+
+    println!("hello world2 {:?}", project_name);
 }
