@@ -14,10 +14,10 @@ build_bins:
 build_bins_release:
 	cargo build --bins --target-dir output/bins --release
 
-build_libs:
+build_lib:
 	cargo build --lib --target-dir output/lib
 
-build_libs_release:
+build_lib_release:
 	cargo build --lib --target-dir output/lib --release
 
 install:
