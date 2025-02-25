@@ -36,20 +36,20 @@ fmt:
 
 run:
 	cargo run --bin rust_develop_template1
-	cargo run --bin rust_develop_template2
+	cargo run --release --bin rust_develop_template2
 
 lint:
-	cargo clippy
-	cargo clippy --no-default-features
-	cargo clippy --tests
-	cargo check --tests
-	cargo check --benches
+	cargo +nightly clippy
+	cargo +nightly clippy --no-default-features
+	cargo +nightly clippy --tests
+	cargo +nightly check --tests
+	cargo +nightly check --benches
 
 test:
-	cargo test --release
+	cargo test --all
 
 bench:
-	cargo bench
+	cargo +nightly bench --all
 
 coverage:
 	cargo tarpaulin --timeout=900 --branch --release

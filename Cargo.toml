@@ -24,8 +24,13 @@ path = "src/rust_develop_template2/main.rs"
 # name = "rust_develop_template_test"
 # path = "tests"
 
-# [[bench]]
-# name = "rust_develop_template_bench"
+[[bench]]
+name = "rust_develop_template_bench1"
+path = "benchs/bench1.rs"
+
+[[bench]]
+name = "rust_develop_template_bench2"
+path = "benchs/bench2.rs"
 
 # [[example]]
 # name = "rust_develop_template_example"
