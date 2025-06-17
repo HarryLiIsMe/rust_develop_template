@@ -1,19 +1,22 @@
 #[cfg(test)]
-
 mod tests {
+    use anyhow::Result;
     use dotenv::dotenv;
 
-    #[test]
-    fn test_case3() {
-        dotenv().ok();
+    #[tokio::test]
+    async fn test_case3() -> Result<()> {
+        dotenv()?;
 
         assert!(true, "test case3 failed");
+
+        Ok(())
     }
 
-    #[test]
-    fn test_case4() {
-        dotenv().ok();
+    #[tokio::test]
+    #[should_panic]
+    async fn test_case4() {
+        dotenv().ok().expect("env load failed!!!");
 
-        assert!(false, "test case4 failed");
+        panic!("test case4 failed");
     }
 }

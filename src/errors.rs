@@ -1,3 +1,5 @@
+use std::env::JoinPathsError;
+use std::env::VarError;
 use std::io::Error as IoError;
 use thiserror::Error;
 
@@ -9,4 +11,8 @@ pub enum Error {
     UnknownError(String),
     #[error("IO error: `{0}`")]
     IoError(#[from] IoError),
+    #[error("IO error: `{0}`")]
+    EnvVarError(#[from] VarError),
+    #[error("IO error: `{0}`")]
+    EnvJoinPathsError(#[from] JoinPathsError),
 }
