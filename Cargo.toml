@@ -40,7 +40,9 @@ harness = false
 
 
 [dependencies]
-dotenv = "0.15.0" 
+dotenv = "0.15.0"
+anyhow = "1.0.98"
+thiserror = "2.0.12"
 
 
 [dev-dependencies]
