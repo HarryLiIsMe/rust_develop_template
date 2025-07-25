@@ -3,9 +3,9 @@ RM=rm-rs -rf
 
 all: rebuild_bins rebuild_lib
 
-rebuild_bins: clean build_bins_rel
+rebuild_bins: clean build_bins
 
-rebuild_lib: clean build_lib_rel
+rebuild_lib: clean build_lib
 
 
 build_bins:
