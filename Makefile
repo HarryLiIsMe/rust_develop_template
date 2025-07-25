@@ -3,21 +3,21 @@ RM=rm-rs -rf
 
 all: rebuild_bins rebuild_lib
 
-rebuild_bins: clean build_bins_release
+rebuild_bins: clean build_bins_rel
 
-rebuild_lib: clean build_lib_release
+rebuild_lib: clean build_lib_rel
 
 
 build_bins:
 	cargo build --bins --target-dir output/bins
 
-build_bins_release:
+build_bins_rel:
 	cargo build --release --bins --target-dir output/bins
 
 build_lib:
 	cargo build --lib --target-dir output/lib
 
-build_lib_release:
+build_lib_rel:
 	cargo build --release --lib --target-dir output/lib
 
 install:
