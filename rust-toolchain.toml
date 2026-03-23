@@ -1,6 +1,7 @@
 [toolchain]
 channel = "stable"
 # channel = "stable-x86_64-unknown-linux-gnu"
+# channel = "stable-x86_64-pc-windows-msvc"
 # channel = "stable-aarch64-apple-darwin"
 components = [ "rustc", "rust-std", "cargo", "rustfmt", "clippy", "rust-src", "rust-docs", "rustc-dev" ]
 # linux、windows、macos_arm64、wasm32
